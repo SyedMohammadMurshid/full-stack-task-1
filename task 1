@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+<head>
+<style>
+        body {
+            background-color: Yellow;
+            font-family: Times New Roman;
+            line-height: 2.0;
+        }
+        nav {
+            background-color: blue;
+            text-align: center;
+            padding: 8px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+        }
+        .container {
+            text-align: center;
+            padding: 200px;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            padding: 10px ;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <a img_src="https://i.pinimg.com/736x/1c/07/08/1c0708a88937e5970cf48c40e7db6a7f.jpg"</a>
+        <a style="background-color:Yellow;color:black;"href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Products</a>
+        <a href="#">Contactus</a>
+    </nav>
+   
+    <div class="container">
+         <img src="https://i.pinimg.com/736x/1c/07/08/1c0708a88937e5970cf48c40e7db6a7f.jpg" width="250" height="200">
+    </div>
+    <footer>
+        <h2 style="color:white">About us</h2>
+    </footer>
+</body>
+<div>
+  
+</html>
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom:  10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container textarea {
+            resize: vertical;
+        }
+        .form-container button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-container .submit-button {
+            background-color: black;
+            color: white;
+        }
+        .form-container .submit-button:hover {
+            background-color: black;
+        }
+        .form-container .cancel-button {
+            background-color: black;
+            color: white;
+        }
+        .form-container .cancel-button:hover {
+            background-color: #e41e1e;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="first-name"><b>First Name:</b></label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name"><b>Last Name:</b></label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="city"><b>City:</b></label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="address"><b>Address:</b></label>
+        <textarea id="text" id="address" name="address"rows="4" required></textarea>
+
+        <label for="requirements"><b>Requirements:</b></label>
+        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+
+        <div class="button-container">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="cancel-button" onclick="document.getElementById('application-form').reset();">Cancel</button>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
