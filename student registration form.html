@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #6cbce8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #00dbe7;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #000000;
+    color: white;
+}
+
+button:hover {
+    opacity: 1.0;
+}
+
+.submit-btn:hover {
+    background-color: #e78e12;
+}
+
+.cancel-btn:hover {
+    background-color: #ff0400;
+}
+input:focus{
+background-color: antiquewhite;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <h2>Student Registration Form</h2>
+
+            <label for="rollno">Register Number:</label>
+            <input type="text" id="rollno" name="rollno" placeholder="Enter register number" required>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required>
+
+            <label for="dept">Department</label>
+            <select id="dept" name="dept" required>
+                <option value="" disabled selected>Select department</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="MECH">Mechanical</option>
+                <option value="CIVIL">Civil</option>
+                <option value="EEE">Electrical and Electronics</option>
+            </select>
+
+            <label for="tenth-marks">10th Grade:</label>
+            <input type="number" id="tenth-marks" name="tenth-marks" placeholder="Enter 10th Grade" required>
+
+            <label for="twelfth-marks">12th Grade:</label>
+            <input type="number" id="twelfth-marks" name="twelfth-marks" placeholder="Enter 12th Grade" required>
+
+            <label for="degree-percentage">Degree Percentage</label>
+            <input type="number" id="degree-percentage" name="degree-percentage" placeholder="Enter degree percentage" required>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
